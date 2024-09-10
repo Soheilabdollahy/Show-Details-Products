@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Created by Soheil Abdollahy || طراحی توسط سهیل عبدالهی</title>
+    <style>
+        .out{
+            margin: 1rem;
+            font-size: 20px;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            background-color: rgb(228, 228, 228);
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            flex-wrap: wrap;
+            margin: 5rem;
+        }
+
+        .box{
+            margin: 2rem;
+            width: 400px;
+            height: 500px;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .box:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .box .description{
+            padding-left: 10px;
+        }
+
+        .box img{
+            width: 400px;
+            border-radius: 5px 5px 0px 0px;
+        }
+        
+
+        button{
+            width: 150px;
+            height: 30px;
+            background-color: aquamarine;
+            border: none;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        .title{
+            background-color: #000;
+            width: 400px;
+            height: 650px;
+            margin: 2rem;
+            padding: 10px;
+            border-radius: 5px;
+            position: fixed;
+            top: 5%;
+            left: -460px;
+            transition: 0.3s;
+        }
+
+        .title h5{
+            color: #fff;
+            text-align: center;
+        }
+
+        .title p{
+            color: red;
+            cursor: pointer;
+        }
+
+        .title img{
+            width: 400px;
+            border-radius: 5px;
+        }
+
+        h2{
+            font-size: 15px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <p class="out">اینترنت خود را روشن بگذارید</p>
+    
+    <div class="container">
+        <div id="box-1" class="box">
+            <img src="https://sothebys-com.brightspotcdn.com/6c/66/c2084398488585cab7af454ed3c1/yuk-8647.jpg" alt="">
+            <div class="description">
+                <h1>Nike</h1>
+                <p>The Best Model Of XL Nike Shoes.😍</p>
+                <h2>28$</h2>
+                <button onclick="open1()">Read More</button>
+            </div>
+        </div>
+
+        <div id="box-1" class="box">
+            <img src="https://staticg.sportskeeda.com/editor/2022/11/7cc80-16693544979995-1920.jpg" alt="">
+            <div class="description">
+                <h1>Nike</h1>
+                <p>The Best Model Of L Nike Shoes.😍</p>
+                <h2>22.99$</h2>
+                <button onclick="open2()">Read More</button>
+            </div>
+        </div>
+
+        <div id="box-1" class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTliB-bUaC-wYmX9t2_3av1eZPG-dMRL7_DAg&s" alt="">
+            <div class="description">
+                <h1>Nike</h1>
+                <p>The Best Model Of XL Nike Shoes.😍</p>
+                <h2>39.99$</h2>
+                <button onclick="open3()">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="title-1" class="title">
+        <p onclick="close1()">X</p>
+        <h5>Size: 45</h5>
+        <h5>Color: Red</h5>
+        <h5>Brand: Nike</h5>
+        <h5>Year: 2022</h5>
+        <h5>Love: 80%</h5>
+        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/aeb3b830-243d-4435-89ba-b060a825de68/WMNS+AIR+JORDAN+1+MM+LOW.png" alt="">
+    </div>
+
+    <div id="title-2" class="title">
+        <p onclick="close2()">X</p>
+        <h5>Size: 38</h5>
+        <h5>Color: Yellow</h5>
+        <h5>Brand: Nike</h5>
+        <h5>Year: 2023</h5>
+        <h5>Love: 78%</h5>
+        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6674bfd2-b65d-4111-847c-1e384a3e63e1/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png" alt="">
+    </div>
+
+    <div id="title-3" class="title">
+        <p onclick="close3()">X</p>
+        <h5>Size: 29</h5>
+        <h5>Color: Blue</h5>
+        <h5>Brand: Nike</h5>
+        <h5>Year: 2019</h5>
+        <h5>Love: 70%</h5>
+        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/33bef61d-9ad2-41b7-a8f1-67062ccc5756/JA+1+TB.png" alt="">
+    </div>
+
+    <script>
+
+        function open1(){
+            document.getElementById("title-1").style.left = "100px"
+        }
+
+        function close1(){
+            document.getElementById("title-1").style.left = "-460px"
+        }
+
+        function open2(){
+            document.getElementById("title-2").style.left = "100px"
+        }
+
+        function close2(){
+            document.getElementById("title-2").style.left = "-460px"
+        }
+
+        function open3(){
+            document.getElementById("title-3").style.left = "100px"
+        }
+
+        function close3(){
+            document.getElementById("title-3").style.left = "-460px"
+        }
+
+    </script>
+
+</body>
+</html>
